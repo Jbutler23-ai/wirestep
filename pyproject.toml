@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wirestep"
+version = "0.1.0"
+description = "Offline digital logic simulation with deterministic transport delays"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+wirestep = "wirestep.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["wirestep*"]

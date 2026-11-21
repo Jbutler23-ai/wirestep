@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "events": [
+    {"time": 5, "signal": "a", "value": "1"},
+    {"time": 10, "signal": "b", "value": "1"},
+    {"time": 15, "signal": "a", "value": "0"},
+    {"time": 20, "signal": "b", "value": "0"}
+  ]
+}

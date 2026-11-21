@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "name": "Half adder",
+  "inputs": [{"name": "a", "initial": "0"}, {"name": "b", "initial": "0"}],
+  "gates": [
+    {"id": "sum-gate", "op": "XOR", "inputs": ["a", "b"], "output": "sum", "delay": 2},
+    {"id": "carry-gate", "op": "AND", "inputs": ["a", "b"], "output": "carry", "delay": 3}
+  ],
+  "outputs": ["sum", "carry"]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "name": "A narrow pulse through reconvergent paths",
+  "inputs": [{"name": "a", "initial": "0"}],
+  "gates": [
+    {"id": "inverter", "op": "NOT", "inputs": ["a"], "output": "not_a", "delay": 5},
+    {"id": "pulse-gate", "op": "AND", "inputs": ["a", "not_a"], "output": "pulse", "delay": 3}
+  ],
+  "outputs": ["pulse"]
+}
